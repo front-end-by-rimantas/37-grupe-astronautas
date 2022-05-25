@@ -11,7 +11,6 @@ footer {
     margin-left: calc((100% - 800px) / 2);
     margin-right: calc((100% - 800px) / 2);
     margin-bottom: 30px;
-    background-color: yellow;
 }
 
 header > img {
@@ -35,9 +34,51 @@ nav > a:first-child {
     margin-left: 0;
 }
 
-main a {
-    background-color: orange;
+main > div {
+    width: 40%;
+    float: left;
 }
+
+main h1 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+main h2 {
+    margin: 0;
+    font-size: 55px;
+    letter-spacing: -2px;
+}
+
+main p {
+    color: #777;
+}
+
+div > div {
+    margin-top: 30px;
+}
+
+main a {
+    display: inline-block;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 22px;
+    text-decoration: none;
+    background-color: #648;
+    border: 2px solid #648;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+}
+
+main a:last-child {
+    color: #648;
+    background-color: #fff;
+}
+
 main > img {
-    background-color: grey;
+    width: 55%;
+    float: right;
 }
