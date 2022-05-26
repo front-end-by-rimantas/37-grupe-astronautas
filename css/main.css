@@ -3,9 +3,7 @@ body {
         sans-serif;
 }
 
-header,
-main,
-footer {
+.container {
     display: inline-block;
     width: 800px;
     margin-left: calc((100% - 800px) / 2);
@@ -13,28 +11,31 @@ footer {
     margin-bottom: 30px;
 }
 
-header > img {
+.logo {
     float: left;
 }
 
-nav {
+.menu {
     float: right;
     margin-top: 10px;
 }
 
-nav > a {
+.link {
     float: left;
     margin-left: 20px;
     font-size: 20px;
     line-height: 20px;
     text-decoration: none;
 }
+.link:hover {
+    text-decoration: underline;
+}
 
-nav > a:first-child {
+.link:first-child {
     margin-left: 0;
 }
 
-main > div {
+.left-column {
     width: 40%;
     float: left;
 }
@@ -71,11 +72,9 @@ div > div {
     margin-top: 30px;
 }
 
-main a {
+.btn {
     display: inline-block;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 10px 30px;
     border-radius: 22px;
     text-decoration: none;
     background-color: #648;
@@ -84,15 +83,28 @@ main a {
     line-height: 20px;
     color: #fff;
 }
+.btn:hover {
+    box-shadow: 0 4px 8px #0004;
+}
 
-main a:last-child {
+.btn.btn-white {
     color: #648;
     background-color: #fff;
+}
+.btn.btn-big {
+    padding: 20px 50px;
+    font-size: 30px;
+    line-height: 30px;
 }
 
 main > img {
     width: 55%;
     float: right;
+    transition: all 1.5s;
+}
+main > img:hover {
+    transform: rotate(360deg) skew(-20deg);
+    opacity: 0;
 }
 
 footer div {
@@ -104,9 +116,25 @@ footer div > a {
     text-decoration: none;
     font-size: 20px;
     color: #aaa;
+    transition: all 3s;
+}
+footer div > a:hover {
+    transition: all 1s;
 }
 footer div > a + a {
     margin-left: 10px;
+}
+footer div > a:nth-of-type(1):hover {
+    color: #648;
+}
+footer div > a:nth-of-type(2):hover {
+    color: red;
+}
+footer div > a:nth-of-type(3):hover {
+    color: orange;
+}
+footer div > a:nth-of-type(4):hover {
+    color: green;
 }
 
 footer p {
