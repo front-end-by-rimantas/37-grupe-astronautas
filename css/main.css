@@ -51,7 +51,19 @@ main h2 {
     letter-spacing: -2px;
 }
 
+main hr {
+    width: 100px;
+    float: left;
+    margin: 0;
+    height: 4px;
+    background-color: #648;
+    border-radius: 2px;
+    border: none;
+}
+
 main p {
+    display: inline-block;
+    width: 100%;
     color: #777;
 }
 
